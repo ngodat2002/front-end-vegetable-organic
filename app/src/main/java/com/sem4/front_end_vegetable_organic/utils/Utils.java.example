@@ -1,0 +1,9 @@
+package com.sem4.front_end_vegetable_organic.utils;
+
+import java.util.List;
+
+public class Utils {
+    public static final String BASE_URL="http://192.168.1.9:80/banhang/"; //vao cmd go ipconfig rồi nhét vào ipV4 vào
+    //mỗi wifi một ip khác nhau
+
+}

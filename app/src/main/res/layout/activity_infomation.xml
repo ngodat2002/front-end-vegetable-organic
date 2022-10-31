@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/veg2">
+    tools:context=".Activity.LienHeActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="20dp">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới Thiệu"
+                    android:fontFamily="@font/semibold"
+                    android:textSize="25dp"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:text="100% thực phẩm hữu cơ tươi. Đảm bảo an toàn cho một sức khỏe tối ưu. Đảm bảo hương vị của các loại trái cây. Giữ vệ sinh môi trường tốt hơn. Tốt cho sức khỏe."/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/veg3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:text="Giao hàng nhanh chóng. Mang đến sự tiện lợi cho người mua. Tiết kiệm thời gian giao nhận."/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/veg4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:text="Chính sách hoàn trả nhanh chóng. An Toàn, bảo mật, nâng cao trải nghiệm của khách hàng."/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/veg5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:padding="15dp"
+                android:textSize="12dp"
+                android:text="Nhóm hỗ trợ tức thì. Tập trung vào phản hồi của khách hàng. Linh hoạt trong phong cách phục vụ khách hàng.Có mặt 24/7, mọi lúc mọi nơi."/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/veg6"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

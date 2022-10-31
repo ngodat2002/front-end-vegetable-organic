@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/title_gio_hang"
+        app:titleTextColor="#181725">
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/framegiohang"
+        android:layout_marginEnd="16dp"
+        android:layout_width="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:layout_gravity="top|right"
+            android:id="@+id/menu_sl"
+            android:layout_width="28dp"
+            android:layout_height="28dp"/>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:src="@drawable/shopping_cart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imgchitiet"
+        android:layout_width="319dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/iconnew_w512"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/txttensp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/semibold"
+        android:text="Float Cake Vietnam"
+        android:textColor="#091020"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgchitiet" />
+
+    <TextView
+        android:id="@+id/txtgiasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Giá: 25000 đ"
+        android:textColor="#FF6813"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txttensp"
+        app:layout_constraintTop_toBottomOf="@+id/txttensp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgiasp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtmotachitiet"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/semibold"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/Chon_so_luong_muon_mua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/semibold"
+        android:text="Số lượng muốn mua: /Kg."
+        app:layout_constraintBottom_toTopOf="@+id/btnthemvaogiohang"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintBottom_toBottomOf="@id/Chon_so_luong_muon_mua"
+        app:layout_constraintStart_toEndOf="@id/Chon_so_luong_muon_mua"
+        app:layout_constraintTop_toTopOf="@+id/Chon_so_luong_muon_mua" />
+    <Button
+        android:id="@+id/btnthemvaogiohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_button_add_cart"
+        android:text="Thêm vào giỏ hàng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
